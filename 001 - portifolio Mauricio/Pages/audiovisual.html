@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("../Images/wpp/audiovisual_wpp.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+
+        #page_title {
+            position: absolute;
+            top: 5px;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        #page_text {
+            position: absolute;
+            top: 80px;
+            font-size: 17px;
+            width: 70%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            color: white;
+        }
+
+        #board_service_area {
+            position: absolute;
+            top: 170px;
+            height: 460px;
+            width: 750px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .service_board {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: transform .5s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .service_board:hover {
+            transform: scale(1.2);
+        }
+
+        .service_board_title {
+            position: absolute;
+            font-size: 17px;
+            color: white;
+            height: 22px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .service_board_text {
+            position: absolute;
+            top: 70px;
+            width: 95%;
+            left: 10px;
+            font-size: 15px;
+            color: white;
+        }
+
+        #whatsapp_area {
+            position: absolute;
+            background: url("../Icons/whatsapp.png");
+            background-size: cover;
+            bottom: 50px;
+            right: 50px;
+            height: 50px;
+            width: 50px;
+            transition: all .5s ease;
+        }
+
+        #whatsapp_area:hover {
+            transform: scale(1.2);
+        }
+
+        #btn_back {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            height: 50px;
+            width: 200px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background: transparent;
+            transition: all .5s ease;
+        }
+
+        #btn_back:hover {
+            background: white;
+        }
+
+        #btn_back:hover a {
+            color: black;
+        }
+
+        #btn_back a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #page_footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            height: 30px;
+            width: 100%;
+            background-color: #00000093;
+        }
+
+        .footer_text {
+            color: white;
+            font-size: 15px;
+        }
+
+        .footer_text a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title>Audiovisual</title>
+</head>
+
+<body>
+    <h1 id="page_title">Serviços de Áudio e video</h1>
+    <p id="page_text">Nesta seção, apresentamos os serviços de instalação de sistemas de áudio e vídeo, como criação de
+        auditórios, salas de entretenimento, salas de videoconferência, e instalação de caixas de som e projetores. Caso
+        tenha interesse em nossos serviços, entre em contato conosco por meio do nosso WhatsApp.</p>
+    <div id="board_service_area">
+        <div class="service_board" id="service_board1">
+            <h2 class="service_board_title">Consultoria para Criação de Auditórios</h2>
+            <div class="service_board_text">Desenvolvimento de projetos personalizados para auditórios, com foco em
+                acústica, qualidade de som e projeção visual, garantindo uma experiência imersiva.</div>
+        </div>
+        <div class="service_board" id="service_board2">
+            <h2 class="service_board_title">Instalação de Sistemas de Som Ambiente</h2>
+            <div class="service_board_text">Planejamento e instalação de sistemas de som ambiente para salas de
+                reunião, conferências e áreas de entretenimento, com distribuição uniforme de áudio.
+            </div>
+        </div>
+        <div class="service_board" id="service_board3">
+            <h2 class="service_board_title">Instalação de Projetores e Telas</h2>
+            <div class="service_board_text">Configuração e instalação de projetores e telas em auditórios, salas de
+                cinema e conferência, garantindo uma projeção de alta qualidade e integração com outros sistemas.</div>
+        </div>
+        <div class="service_board" id="service_board4">
+            <h2 class="service_board_title">Consultoria para Salas de Videoconferência</h2>
+            <div class="service_board_text">Planejamento de ambientes otimizados para videoconferências, com
+                equipamentos de áudio, vídeo e iluminação que garantem clareza e eficiência nas comunicações.</div>
+        </div>
+        <div class="service_board" id="service_board5">
+            <h2 class="service_board_title">Instalação de Salas de Entretenimento</h2>
+            <div class="service_board_text">Projeto e instalação de sistemas de áudio e vídeo para home theaters e salas
+                de entretenimento, proporcionando uma experiência cinematográfica em casa.</div>
+        </div>
+        <div class="service_board" id="service_board6">
+            <h2 class="service_board_title">Integração de Sistemas Multimídia</h2>
+            <div class="service_board_text">Instalação e configuração de sistemas multimídia integrados, conectando som,
+                vídeo e automação em um único controle, para uso eficiente em diferentes ambientes.</div>
+        </div>
+    </div>
+    <a id="whatsapp_area" href="https://wa.me/5511953649904" target="_blank"><img src="../Icons/whatsapp.png"
+            width="50px" height="50px"></a>
+    <button id="btn_back"><a href="../index.html">VOLTAR</a></button>
+    <footer id="page_footer">
+        <p class="footer_text">E-mail: <a href="mailto:projetosmfs1@gmail.com">projetosmfs1@gmail.com</a></p>
+        <p class="footer_text">Telefone: +55 (11) 953649904</p>
+        <p class="footer_text">&copy; 2024 Mauricio Ferreira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

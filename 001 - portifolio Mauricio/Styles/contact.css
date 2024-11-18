@@ -1,0 +1,166 @@
+/* CONTACT PART */
+#page_contacts {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: #091C26;
+}
+
+
+#phrase_form{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#phrase_form span{
+    color: #1976e1;
+}
+
+
+#service_forms{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 520px;
+    width: 700px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    border: 3px solid rgba(255, 255, 255, 0.174);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(35deg, transparent, rgba(255, 255, 255, 0.1));
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+#all_input_area{
+    position: absolute;
+    top: 70px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+.area_input{
+    position: relative;
+    width: 220px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*esses sao os inputs*/
+.service_forms_item{
+    border: none;
+    background-color: #ffffff41;
+    height: 30px;
+    width: 160px;
+    border-radius: 30px;
+}
+
+
+#service_forms label{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#area_description{
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    top: 250px;
+    left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+#description_form{
+    position: relative;
+    height: 140px;
+    width: 380px;
+}
+
+#service_select{
+    position: absolute;
+    right: 35px;
+    top: 270px;
+    height: 30px;
+    width: 160px;
+    background-color: white;
+    transition: height .6s ease;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.service_option{
+    height: 30px;
+    width: 160px;
+    background-color: #ffffff41;
+}
+
+.service_option a{
+    position: relative;
+    top: 8px;
+    text-decoration: none;
+    color: black;
+    left: 20px;
+}
+
+.service_option:hover{
+    background: #1976e1;
+}
+
+.service_option:hover a{
+    color: white;
+}
+
+#service_option1{
+    order: 2;
+}
+#service_option2{
+    order: 1;
+}
+#service_option3{
+    order: 3;
+}
+#service_option4{
+    order: 4;
+}
+#service_option5{
+    order: 5;
+}
+#service_option6{
+    order: 6;
+}
+
+
+
+#btn_send_form{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    background: #1976e1;
+    color: white;
+    height: 35px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+}
