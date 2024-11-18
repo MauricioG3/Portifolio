@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("../Images/wpp/network_wpp.png");
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+
+        #page_title {
+            position: absolute;
+            top: 5px;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        #page_text {
+            position: absolute;
+            top: 80px;
+            font-size: 17px;
+            width: 70%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            color: white;
+        }
+
+        #board_service_area {
+            position: absolute;
+            top: 170px;
+            height: 460px;
+            width: 750px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .service_board {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: transform .5s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .service_board:hover {
+            transform: scale(1.2);
+        }
+
+        .service_board_title {
+            position: absolute;
+            font-size: 17px;
+            color: white;
+            height: 22px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .service_board_text {
+            position: absolute;
+            top: 70px;
+            width: 95%;
+            left: 10px;
+            font-size: 15px;
+            color: white;
+        }
+
+        #whatsapp_area {
+            position: absolute;
+            background: url("../Icons/whatsapp.png");
+            background-size: cover;
+            bottom: 50px;
+            right: 50px;
+            height: 50px;
+            width: 50px;
+            transition: all .5s ease;
+        }
+
+        #whatsapp_area:hover {
+            transform: scale(1.2);
+        }
+
+        #btn_back {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            height: 50px;
+            width: 200px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background: transparent;
+            transition: all .5s ease;
+        }
+
+        #btn_back:hover {
+            background: white;
+        }
+
+        #btn_back:hover a {
+            color: black;
+        }
+
+        #btn_back a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #page_footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            height: 30px;
+            width: 100%;
+            background-color: #00000093;
+        }
+
+        .footer_text {
+            color: white;
+            font-size: 15px;
+        }
+
+        .footer_text a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title>Redes e Wi-Fi</title>
+</head>
+
+<body>
+    <h1 id="page_title">Serviços de Redes e Wi-Fi</h1>
+    <p id="page_text">Nesta seção, apresentamos os serviços de instalação e manutenção de redes e Wi-Fi, garantindo
+        conectividade estável e eficiente para residências e empresas. Caso tenha interesse em nossos serviços, entre em
+        contato conosco por meio do nosso WhatsApp.</p>
+    <div id="board_service_area">
+        <div class="service_board" id="service_board1">
+            <h2 class="service_board_title">Projeto e Implementação de Redes</h2>
+            <div class="service_board_text">Desenvolvimento completo de projetos de redes para empresas, desde o
+                planejamento da infraestrutura até a instalação e organização do rack de equipamentos.</div>
+        </div>
+        <div class="service_board" id="service_board2">
+            <h2 class="service_board_title">Cabeamento Estruturado para Redes Empresariais</h2>
+            <div class="service_board_text">Planejamento e instalação de cabeamento estruturado, incluindo redes LAN e
+                fibra óptica, com foco em desempenho, organização e expansão futura.</div>
+        </div>
+        <div class="service_board" id="service_board3">
+            <h2 class="service_board_title">Otimização de Cobertura Wi-Fi</h2>
+            <div class="service_board_text">Configuração e instalação de pontos de acesso para garantir uma cobertura
+                Wi-Fi eficiente e estável, eliminando zonas mortas em ambientes empresariais e residenciais.</div>
+        </div>
+        <div class="service_board" id="service_board4">
+            <h2 class="service_board_title">Configuração e Suporte para Equipamentos de Rede</h2>
+            <div class="service_board_text">Configuração de roteadores, switches e firewalls, com manutenção e suporte
+                técnico para garantir o desempenho e segurança da rede.</div>
+        </div>
+        <div class="service_board" id="service_board5">
+            <h2 class="service_board_title">Instalação de Sistemas de Rede Segura</h2>
+            <div class="service_board_text">Implementação de redes seguras, com firewall e VPNs para proteger dados
+                empresariais e permitir o acesso remoto de forma confiável.</div>
+        </div>
+        <div class="service_board" id="service_board6">
+            <h2 class="service_board_title">Análise e Otimização de Redes Existentes</h2>
+            <div class="service_board_text">Auditoria e análise de redes existentes para identificar gargalos e realizar
+                melhorias que aumentem a velocidade e estabilidade da rede.</div>
+        </div>
+    </div>
+    <a id="whatsapp_area" href="https://wa.me/5511953649904" target="_blank"><img src="../Icons/whatsapp.png"
+            width="50px" height="50px"></a>
+    <button id="btn_back"><a href="../index.html">VOLTAR</a></button>
+    <footer id="page_footer">
+        <p class="footer_text">E-mail: <a href="mailto:projetosmfs1@gmail.com">projetosmfs1@gmail.com</a></p>
+        <p class="footer_text">Telefone: +55 (11) 953649904</p>
+        <p class="footer_text">&copy; 2024 Mauricio Ferreira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

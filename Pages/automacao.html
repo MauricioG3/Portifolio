@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: none;
+            padding: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url("../Images/wpp/automacao_wpp.png");
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+
+        #page_title {
+            position: absolute;
+            top: 5px;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
+
+        #page_text {
+            position: absolute;
+            top: 80px;
+            font-size: 17px;
+            width: 70%;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            color: white;
+        }
+
+        #board_service_area {
+            position: absolute;
+            top: 170px;
+            height: 460px;
+            width: 750px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .service_board {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: 1px solid #ffffff;
+            border-radius: 3px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: transform .5s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .service_board:hover {
+            transform: scale(1.2);
+        }
+
+        .service_board_title {
+            position: absolute;
+            font-size: 17px;
+            color: white;
+            height: 22px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .service_board_text {
+            position: absolute;
+            top: 70px;
+            width: 95%;
+            left: 10px;
+            font-size: 15px;
+            color: white;
+        }
+
+        #whatsapp_area {
+            position: absolute;
+            background: url("../Icons/whatsapp.png");
+            background-size: cover;
+            bottom: 50px;
+            right: 50px;
+            height: 50px;
+            width: 50px;
+            transition: all .5s ease;
+        }
+
+        #whatsapp_area:hover {
+            transform: scale(1.2);
+        }
+
+        #btn_back {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 10px 20px;
+            height: 50px;
+            width: 200px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background: transparent;
+            transition: all .5s ease;
+        }
+
+        #btn_back:hover {
+            background: white;
+        }
+
+        #btn_back:hover a {
+            color: black;
+        }
+
+        #btn_back a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #page_footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            height: 30px;
+            width: 100%;
+            background-color: #00000093;
+        }
+
+        .footer_text {
+            color: white;
+            font-size: 15px;
+        }
+
+        .footer_text a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    <title>Automacao</title>
+</head>
+
+<body>
+    <h1 id="page_title">Serviços de automação</h1>
+    <p id="page_text">Nesta seção, apresentamos os serviços de automação que oferecemos, como o controle automatizado de
+        iluminação, cortinas, e outros dispositivos, para facilitar o dia a dia e aumentar a eficiência. Caso tenha
+        interesse em nossos serviços, entre em contato conosco por meio do nosso WhatsApp.</p>
+    <div id="board_service_area">
+        <div class="service_board" id="service_board1">
+            <h2 class="service_board_title">Automação de iluminação</h2>
+            <div class="service_board_text">Instalação de sistemas de iluminação inteligente que permitem o controle
+                remoto, criação de cenários personalizados e ajustes.</div>
+        </div>
+        <div class="service_board" id="service_board2">
+            <h2 class="service_board_title">Automação de cortinas e persianas</h2>
+            <div class="service_board_text">Automação de cortinas e persianas com controle remoto ou agendamentos
+                automáticos, melhorando o conforto e a eficiência energética dos ambientes.</div>
+        </div>
+        <div class="service_board" id="service_board3">
+            <h2 class="service_board_title">Integração IoT e Assistentes Virtuais</h2>
+            <div class="service_board_text">Configuração de dispositivos de automação para integrar com sistemas IoT e
+                assistentes virtuais como Alexa e Google Assistant, permitindo o controle de toda a casa por comandos de
+                voz.</div>
+        </div>
+        <div class="service_board" id="service_board4">
+            <h2 class="service_board_title">Automação de Sistemas de Áudio e Vídeo</h2>
+            <div class="service_board_text">Configuração de sistemas de entretenimento, permitindo controle unificado de
+                TV, som e streaming, com acesso remoto e integração com o ambiente.
+            </div>
+        </div>
+        <div class="service_board" id="service_board5">
+            <h2 class="service_board_title">Instalação de Tomadas e Interruptores Inteligentes</h2>
+            <div class="service_board_text">Instalação de tomadas e interruptores automatizados que podem ser
+                controlados remotamente ou programados.</div>
+        </div>
+    </div>
+    <a id="whatsapp_area" href="https://wa.me/5511953649904" target="_blank"><img src="../Icons/whatsapp.png"
+            width="50px" height="50px"></a>
+    <button id="btn_back"><a href="../index.html">VOLTAR</a></button>
+    <footer id="page_footer">
+        <p class="footer_text">E-mail: <a href="mailto:projetosmfs1@gmail.com">projetosmfs1@gmail.com</a></p>
+        <p class="footer_text">Telefone: +55 (11) 953649904</p>
+        <p class="footer_text">&copy; 2024 Mauricio Ferreira. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
