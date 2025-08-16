@@ -40,7 +40,7 @@ body {
     transition: background-size 2s ease;
     z-index: 1;
     width: 100vw;
-    height: 800px;
+    height: 100vh;
 }
 
 #fixed_header {
@@ -266,4 +266,5 @@ body {
 .footer_text a {
     text-decoration: none;
     color: white;
+
 }
